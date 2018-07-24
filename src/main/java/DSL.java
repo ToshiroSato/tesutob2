@@ -42,6 +42,7 @@ private WebDriver driver;
 }
 	/********* Sincronismo ************/
 	
+<<<<<<< HEAD
 	public WebElement sincronismologInvalido(String xpath_spanSincr) {
 		
 		WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -58,10 +59,34 @@ private WebDriver driver;
 		
 	/********* Span ************/
 		
+=======
+	/*public void selecionarCombo(String id, String valor) {
+		WebElement element = getDriver().findElement(By.id(id));
+		Select combo = new Select(element);
+		combo.selectByVisibleText(valor);
+	}
+	WebDriverWait wait = new WebDriverWait(driver, 30);
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//font[@color='red']")));
+	
+	*/
+	public WebElement aplicarSincronismo(String xpath_spanSincr) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//font[@color='red']")));
+		
+	}
+	
+	/********* Span ************/
+	
+	/*Assert.assertTrue(driver.findElement(By.xpath("//font[@color='red']"))
+	 * .getText().startsWith("Your account may be"));
+	*/
+>>>>>>> 3ff57ee98062d0222b6c71c60e00768bcc4f99f8
 	public boolean obterConteudoSpan(Boolean xpath_span) {
 		
 		return driver.findElement(By.xpath("//font[@color='red']")).getText().startsWith("Your account may be");
 		}
+<<<<<<< HEAD
 	
 	/********* Nome do usuario na tela inicial ************/
 	
@@ -71,3 +96,6 @@ private WebDriver driver;
 		
 	}
 }
+=======
+	}
+>>>>>>> 3ff57ee98062d0222b6c71c60e00768bcc4f99f8

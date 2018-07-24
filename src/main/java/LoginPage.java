@@ -1,5 +1,8 @@
 import org.openqa.selenium.WebDriver;
+<<<<<<< HEAD
 import org.openqa.selenium.WebElement;
+=======
+>>>>>>> 3ff57ee98062d0222b6c71c60e00768bcc4f99f8
 
 public class LoginPage {
 	
@@ -22,6 +25,7 @@ public class LoginPage {
 		dsl.escrever("password", password);
 	}
 	
+<<<<<<< HEAD
 	public void setBottom(String botao) {
 		dsl.clicarBotao("//*[@value='Login']");
 	}
@@ -30,6 +34,12 @@ public class LoginPage {
 		dsl.clicarBotao("//*[@value='Login']");
 	}*/
 	
+=======
+	public void logar() {
+		dsl.clicarBotao("//*[@value='Login']");
+	}
+	
+>>>>>>> 3ff57ee98062d0222b6c71c60e00768bcc4f99f8
 	public String obterUsername() {
 		
 		return dsl.obterValorCampo("username");
@@ -38,6 +48,7 @@ public class LoginPage {
 	public String obterPassword() {
 		
 		return dsl.obterValorCampo("password");
+<<<<<<< HEAD
 	}
 	
 	public String validarClick() {
@@ -48,6 +59,8 @@ public class LoginPage {
 	public WebElement sincronismo() {
 		
 		return dsl.sincronismologInvalido("//font[@color='red']");
+=======
+>>>>>>> 3ff57ee98062d0222b6c71c60e00768bcc4f99f8
 		
 	}
 	
